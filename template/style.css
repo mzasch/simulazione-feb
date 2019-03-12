@@ -1,0 +1,174 @@
+body {
+  font-family: 'ABeeZee';
+}
+
+div.bici-status {
+  border: 1px solid grey;
+  border-radius: 10px;
+  background-color: lightgrey;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+div.bici-status div.bici-id {
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+div.bici-status div.bici-status-content {
+  display: none;
+}
+
+div.bici-status-content strong {
+  color: red;
+}
+
+div.info-stazione {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 5px;
+}
+
+div.info-stazione div.dati-stazione {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.daily-report {
+  border: 1px solid grey;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+h4.header:after{
+    content:' ';
+    display:block;
+    border:1px solid darkgrey;
+}
+
+/* TABLES */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Zebra striping */
+tr:nth-of-type(odd) {
+  background: #eee;
+}
+
+tr.ongoing-op {
+  background: tomato;
+}
+
+th {
+  background: #333;
+  color: white;
+  font-weight: bold;
+}
+
+td, th {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+/* FORMS */
+/* Style inputs, select elements and textareas */
+div.form-container {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input, select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* HOME PAGE */
+.wrap {
+    max-width: 720px;
+    margin: 50px auto;
+    padding: 30px 40px;
+    text-align: center;
+    box-shadow: 0 4px 25px -4px #9da5ab;
+}
+article {
+    padding: 40px;
+    line-height: 150%;
+    text-align: left;
+}
+
+nav .item {
+    text-decoration: none;
+}
+nav .active {
+    border-bottom: 1px solid;
+}
