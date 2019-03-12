@@ -10,13 +10,13 @@ function config($key = '')
     $config = [
         'name' => 'Simulazione di seconda prova',
         'subtitle' => '28 febbraio 2019',
-        'site_url' => 'http://localhost/simulazione-php',
+        'site_url' => 'http://localhost/simulazione-feb',
         'pretty_uri' => true,
         'nav_menu' => [
             '' => 'Home',
-            'scelta-report' => 'Report utente',
-            'scelta-stazione' => 'Lista Stazioni',
             'stato-bici' => 'Bici in uso',
+            'scelta-stazione' => 'Lista Stazioni',
+            'scelta-report' => 'Report utente',
         ],
         'template_path' => 'template',
         'content_path' => 'content',
