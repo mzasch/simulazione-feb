@@ -20,6 +20,7 @@
     exit;
   }
 ?>
+
 <h3>Scegli la stazione</h3>
 <div class='form-container'>
   <form action="<?php config('site_url') . '/' ?>stato-stazione" method="POST">
