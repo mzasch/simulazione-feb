@@ -67,7 +67,7 @@ tr:nth-of-type(odd) {
 }
 
 tr.ongoing-op {
-  background: tomato;
+  background: yellow;
 }
 
 th {

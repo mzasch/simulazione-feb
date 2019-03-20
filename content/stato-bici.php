@@ -23,13 +23,13 @@
        ordine di tempo. */
     while($res = mysqli_fetch_assoc($result_bici)) {
       $rfidBici = $res['TagRFID'];
-      $query = "SELECT o.tagRFID, u.Nome, u.Cognome, s.Nome, o.Data_Ora_Ritiro
+      $query = "SELECT o.tagRFID, u.Nome, u.Cognome, s.Nome AS StazioneRitiro, o.Data_Ora_Ritiro
                     FROM operazioni o
                     JOIN utenti u ON o.idUtente = u.idUtente
                     JOIN stazioni s ON o.idStazioneRitiro = s.idStazione
                   WHERE o.tagRFID = $rfidBici
                   AND o.Data_Ora_Consegna IS NULL
-                  ORDER BY o.Data_Ora_Consegna DESC
+                  ORDER BY o.Data_Ora_Ritiro DESC
                   LIMIT 1";
 
       if(!$result = mysqli_query($connection, $query)) {
@@ -46,7 +46,7 @@
         echo "<p>Attualmente <strong>in uso</strong></p>\n";
         echo "<p>Prelevata da " . $op['Nome'] . " " . $op['Cognome'] . "</p>\n";
         echo "<p>Ora prelievo: " . $op['Data_Ora_Ritiro'] . "</p>\n";
-        echo "<p>Stazione ritiro: " . $op['Nome'] . "</p>\n";
+        echo "<p>Stazione ritiro: " . $op['StazioneRitiro'] . "</p>\n";
         echo "</div>\n</div>\n";
       }
     }

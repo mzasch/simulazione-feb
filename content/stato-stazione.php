@@ -5,7 +5,7 @@
 
   /* Nel caso in cui non sia stata impostato il parametro stazione (cioè siamo
      arrivati a questa pagina non dalla form scelta-stazione.php), applichiamo
-     un codice 302 - Moved temporarily e redirigiamo la richiesta alla pagina
+     un codice 302 - Moved temporarily e reindirizziamo la richiesta alla pagina
      corretta. */
   if(!isset($_POST['stazione'])){
     header('Location: scelta-stazione.php');
@@ -41,7 +41,7 @@
 
 <h3>Stato della stazione</h3>
 <div class='info-stazione'>
-  <img src='images/<?php echo $colors[$op['idStazione']] ?>-station.png' alt='Stazione <?php echo $colors[$op['idStazione']] ?>' />;
+  <img src='images/<?php echo $colors[$op['idStazione']] ?>-station.png' alt='Stazione <?php echo $colors[$op['idStazione']] ?>' />
   <div class="dati-stazione">
     <p>
     <?php
