@@ -16,11 +16,13 @@ function config($key = '')
             '' => 'Home',
             'stato-bici' => 'Bici in uso',
             'scelta-stazione' => 'Lista Stazioni',
+            'mappa-Stazioni' => 'Mappa Stazioni',
             'scelta-report' => 'Report utente',
         ],
         'template_path' => 'template',
         'content_path' => 'content',
-        'version' => 'v1.0',
+        'header_path' => 'header',
+        'version' => 'v2.0',
     ];
 
     return isset($config[$key]) ? $config[$key] : null;

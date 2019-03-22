@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="<?php site_url(); ?>/template/style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <?php page_header(); ?>
 </head>
 <body>
 <div class="wrap">

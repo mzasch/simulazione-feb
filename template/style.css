@@ -152,6 +152,19 @@ input[type=submit] {
   }
 }
 
+/* MAPPE */
+div#map {
+  height: 400px;
+}
+
+.rosso {
+    color: red;
+}
+.verde {
+    color: green;
+}
+
+
 /* HOME PAGE */
 .wrap {
     max-width: 720px;
@@ -164,6 +177,7 @@ article {
     padding: 40px;
     line-height: 150%;
     text-align: left;
+    width: auto;
 }
 
 nav .item {

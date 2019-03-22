@@ -107,9 +107,10 @@ CREATE TABLE `stazioni` (
 --
 
 INSERT INTO `stazioni` (`idStazione`, `Nome`, `Latitudine`, `Longitudine`, `Indirizzo`, `BiciDisponibili`) VALUES
-(1, 'Leonardo', 2.4578, 7.9812, 'via Porta Nuova, 3', 49),
-(2, 'Michelangelo', 10.4637, 42.7865, 'via Centrale, 16', 49);
-
+(1, 'Leonardo', 45.70662, 11.48746, 'via dei Tigli, 10', 48),
+(2, 'Michelangelo', 45.70768, 11.48503, 'via Centrale, 16', 49),
+(3, 'Donatello', 45.70522, 11.4846, 'via Vanzetti, 8', 50),
+(4, 'Raffaello', 45.70806, 11.47926, 'via Gorizia, 31', 50);
 -- --------------------------------------------------------
 
 --

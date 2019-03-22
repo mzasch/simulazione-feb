@@ -63,7 +63,7 @@ function page_title()
 
 /**
  * Displays page content. It takes the data from
- * the static pages inside the pages/ directory.
+ * the static pages inside the content/ directory.
  * When not found, display the 404 error page.
  */
 function page_content()
@@ -78,6 +78,22 @@ function page_content()
 
     include($path);
 }
+
+/**
+ * Include specific page header. It takes the data
+ * from files in the header/ directory.
+ * When not found, nothing is added.
+ */
+function page_header()
+{
+    if (isset($_GET['page'])) {
+      $page = $_GET['page'];
+      $path = getcwd() . '/' . config('header_path') . '/' . $page . '-header.php';
+      if (file_exists($path))
+        include($path);
+    }
+}
+
 
 /**
  * Starts everything and displays the template.
